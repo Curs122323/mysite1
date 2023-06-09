@@ -1,0 +1,537 @@
+body {
+   font-family: Times New Roman MS, Times New Roman;
+   width: 99%;
+   color: #FFFFF1;
+   background-color: #111111;
+
+    background-attachment: fixed;
+    background-size: 100%;
+    background-image: url(Background.jpg);}
+
+summary {
+    display:block;
+    color: #ffffff;
+    font-size:1.4em;
+    border-bottom: 2px solid #aaaaaa;}
+
+summary:before {  
+    color: #111111;
+    color: transparent; 
+    transition: transform 2.5s;}
+
+details[open] > summary:before {
+  transform: rotateZ(90deg);
+}
+summary ~ * {
+   padding: 0 2em 20px 2em;
+}
+details[open] summary ~ *{ 
+  animation: sweep .5s ease-in-out;
+}
+
+p {
+    font-size: 1.1em;}
+#Name-Map h1 {
+    font-size: 3.1em;
+    color: #ffffff;}
+#Text-Map h3 {
+    font-size: 1.3em;}
+
+/*Вышеуказанная часть остаётся не изменной для любых форматов*/
+
+#Top-Block {
+    width: 69%;
+    margin-right: 16%;
+    margin-left: 16%;}
+
+#Image-Center{
+    text-align: center;
+}
+
+#Menu-Block {
+    background-image: url(Menu-Block-1.jpg);
+    height: 300px;
+    background-blend-mode: multiply;
+    background-color: #bababa;
+    background-size: cover;}
+#Menu-Block-RAS {
+    background-image: url(Menu-Block-1.jpg);
+    height: 400px;
+    background-blend-mode: multiply;
+    background-color: #bababa;
+    background-size: cover;}
+#Menu-Block-XS {
+    background-image: url(Menu-Block-3.png);
+    height: 400px;
+    background-blend-mode: multiply;
+    background-color: #bababa;
+    background-size: cover;}
+#Menu-Block-SAO {
+    background-image: url(Menu-Block-4.png);
+    height: 400px;
+    background-blend-mode: multiply;
+    background-color: #bababa;
+    background-size: cover;}
+#Menu-Block-About {
+    background-image: url(Menu-Block-6.jpg);
+    height: 350px;
+    background-blend-mode: multiply;
+    background-color: #ffffff;
+    background-size: cover;}
+#Menu-Block-Maps {
+    background-image: url(Menu-Block-5.jpg);
+    height: 400px;
+    background-blend-mode: multiply;
+    background-color: #bababa;
+    background-size: cover;}
+
+
+#Home-Ref {
+    width: 37.1%;
+    float: left;
+    background-size: cover;
+    background-image: url(Srn_DT-01.jpg);
+    border: 1px solid #11aaf0;
+    display: inline-block;}
+#Menu-Ref {
+    width: 31%;
+    float: left;
+    background-size: cover;
+    background-image: url(Srn_DT-01.jpg);
+    border: 1px solid #11aaf0;
+    display: inline-block;}
+#Name-Map {
+    width: 70%;
+    float: right;
+    background-size: cover;
+    background-image: url(Srn_DT-01.jpg);
+    border: 1px solid #11aaf0;
+    display: inline-block;}
+#Text-Map {
+    width: 70%;
+    float: left;
+    background-size: cover;
+    background-image: url(Srn_DT-01.jpg);
+    border: 1px solid #11aaf0;
+    display: inline-block;}
+
+
+
+#Body-Block {
+    background-image: url(Body-Block-2.jpg);
+    background-blend-mode: multiply;
+    background-color: #404069;
+    background-size: cover;}
+#Body-Block-RAS {
+    background-image: url(Body-Block-1.jpg);
+    background-blend-mode: multiply;
+    background-color: #404069;
+    background-size: cover;}
+#Body-Block-XS {
+    background-image: url(Body-Block-3.jpg);
+    background-blend-mode: multiply;
+    background-color: #404069;
+    background-size: cover;}
+#Body-Block-SAO {
+    background-image: url(Body-Block-4.jpg);
+    background-blend-mode: multiply;
+    background-color: #404069;
+    background-size: cover;}
+#Body-Block-About {
+    background-image: url(Body-Block-1.jpg);
+    background-blend-mode: multiply;
+    background-color: #ffffff;
+    background-size: 100%;}
+#Icon-Name-Block {
+    float: left;
+    background-size: cover;
+    background-image: url(Name-Background.png);
+    width: 99%;
+    height: 70px;
+    border: 1px solid #11aaf0;
+    display: inline-block;}
+#Icon-Block {
+    margin-left: 1%;
+    float: left;
+    background-size: cover;
+    width: 6%;
+    border: 1px solid #11aaf0;
+    display: inline-block;}
+#Icon-News-Block {
+    margin-left: 3%;
+    float: left;
+    background-size: cover;
+    width: 6%;
+    border: 1px solid #11aaf0;
+    display: inline-block;}
+#Icon-Info {
+    margin-left: 2%;
+    float: left;
+    background-size: cover;
+    width: 67%;
+    border: 1px solid #11aaf0;
+    display: inline-block;}
+#Maps-Name-Block {
+    float: left;
+    background-size: cover;
+    background-image: url(Name-Background.png);
+    width: 99%;
+    border: 1px solid #11aaf0;
+    display: inline-block;}
+
+#Icon-Name-Block h2 {
+    margin-left: 2%;}
+
+#Maps-Block {
+    margin-left: 1%;
+    float: left;
+    background-size: cover;
+    width: 16%;
+    border: 1px solid #11aaf0;
+    display: inline-block;}
+#Maps-Info {
+    margin-left: 2%;
+    float: left;
+    background-size: cover;
+    width: 57%;
+    border: 1px solid #11aaf0;
+    display: inline-block;}
+
+
+#a {
+    display: inline-block;}
+#Menu-Ref > a {color: #FFFFFF;
+       font-size: 1.3em;
+        transition: margin 0.9s;}
+#Menu-Ref > a:hover {color: #DADADA;
+        font-size: 1.3em;
+        margin-left: 3%;
+        transition: color 1.5s;
+        transition: margin 0.9s;}
+#Page{
+    margin-left: 5%;}
+
+#News-Image {
+    float: left;
+    background-size: cover;
+    width: 70%;
+    border: 1px solid #11aaf0;
+    display: inline-block;}
+#News-Page-Image {
+    float: left;
+    margin-left: 15%;
+    background-size: cover;
+    width: 70%;
+    border: 1px solid #11aaf0;
+    display: inline-block;}
+#News-Text {
+    margin-left: 1%;
+    width: 27%;
+    border: 1px solid #11aaf0;
+    display: inline-block;}
+
+#One-Image {
+    float: left;
+    background-size: cover;
+    background-image: url(Srn_DT-01.jpg);
+    width: 50%;
+    border: 1px solid #11aaf0;
+    display: inline-block;}
+
+#One-Logo {
+    margin-left: 4%;
+    width: 45%;
+    border: 1px solid #11aaf0;
+    display: inline-block;}
+
+#Project-Image {
+    float: left;
+    background-size: cover;
+    margin-left: 2%;
+    width: 30%;
+    border: 1px solid #11aaf0;
+    display: inline-block;}
+
+#Project-Name {
+    float: left;
+    background-size: cover;
+    margin-left: 2%;
+    width: 30%;
+    border: 1px solid #11aaf0;
+    display: inline-block;}
+
+#One-Text {
+    margin-left: 4%;
+    width: 91%;
+    border: 1px solid #11aaf0;
+    display: inline-block;}
+#One-News-Text {
+    margin-left: 7%;
+    width: 85%;
+    border: 1px solid #11aaf0;
+    display: inline-block;}
+
+#Two-Image {
+    float: left;
+    background-size: cover;
+    width: 50%;
+    border: 1px solid #11aaf0;
+    display: inline-block;}
+
+#Two-Text {
+    margin-left: 4%;
+    width: 91%;
+    border: 1px solid #11aaf0;
+    display: inline-block;}
+
+#Three-Text {
+    margin-left: 4%;
+    width: 45%;
+    border: 1px solid #11aaf0;
+    display: inline-block;}
+
+#Button-Block {
+    margin-left: 4%;
+    width: 17%;
+    border: 1px solid #11aaf0;
+    display: inline-block;}
+
+#Info-Block {
+    width: 100%;
+    background-image: url(Background.jpg);
+    border: 1px solid #ff11f0;
+    display: inline-block;}
+
+
+#Credit-Block {
+    width: 74%;
+    border: 1px solid #11aaf0;
+    display: inline-block;}
+
+#Information-Block {
+    margin-left: 5%;
+    width: 90%;
+    border: 1px solid #11aaf0;
+    display: inline-block;}
+
+#Info-Image {
+    float: left;
+    margin-left: 5%;
+    width: 15%;
+    background-size: cover;
+    background-image: url(Lich-Info.png);
+    border: 1px solid #11aaf0;
+    display: inline-block;}
+
+#Info-Text {
+    width: 69%;
+    border: 1px solid #11aaf0;
+    display: inline-block;}
+
+
+
+#Catalog-Game-Block {
+    margin-left: 1%;
+    width: 48%;
+    border: 1px solid #11aaf0;
+    display: inline-block;}
+
+#Catalog-Game-Image {
+    float: left;
+    margin-top: 4%;
+    margin-left: 1%;
+    width: 30%;
+    height: 20%
+    background-size: cover;
+    border: 1px solid #11aaf0;
+    display: inline-block;}
+
+#Catalog-Game-Text {
+    margin-left: 1%;
+    width: 66%;
+    border: 1px solid #11aaf0;
+    display: inline-block;}
+
+
+
+#Id-Block {
+    width: 100%;
+    border: 1px solid #11aaf0;
+    display: inline-block;}
+
+h1 {
+    color: #ffffff;
+}
+/*
+h1 {
+    margin-top: -5%;
+    text-align: center;
+    font-size: 3.5em;}
+
+h2 {
+    margin-top: 20%;
+    font-size: 2.5em;
+    text-align: left;}
+
+h3 {
+    font-size: 2em;
+    text-align: left;}
+
+h4 {
+    margin-top: 8%;
+    font-size: 1.6em;
+    text-align: left;}
+
+p {
+    margin-top: -3%;
+    font-size: 1.5em;
+    text-align: left;}
+*/
+
+
+
+
+
+
+
+
+
+
+slider { /*положение слайдера*/
+    position: relative;
+	text-align: center;
+    top: 10px;
+}
+
+#slider{ /*центровка слайдера*/
+	margin: 0 auto;
+}
+
+#slides article{ /*все изображения справа друг от доруга*/
+	width: 20%;
+	float: left;
+}
+
+#slides .image{ /*устанавливает общий размер блока с изображениями*/
+	width: 500%;
+	line-height: 0;
+}
+
+#overflow{ /*сркывает все, что находится за пределами этого блока*/
+	width: 100%;
+	overflow: hidden;
+}
+
+article img{ /*размер изображений слайдера*/
+	margin-top: 1%;
+	width: 70%;
+	margin-left: 15%;
+}
+
+#desktop:checked ~ #slider{ /*размер всего слайдера*/
+	max-width: 960px; /*максимальнная длинна*/
+}
+
+/*настройка переключения и положения для левой стрелки*/
+/*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
+#switch1:checked ~ #controls label:nth-child(5), 
+#switch2:checked ~ #controls label:nth-child(1),
+#switch3:checked ~ #controls label:nth-child(2),
+#switch4:checked ~ #controls label:nth-child(3),
+#switch5:checked ~ #controls label:nth-child(4){
+	background: url('prev.png') no-repeat; /*заливка фона картинкой без повторений*/
+	float: left;
+	margin: 0 0 0 -84px; /*сдвиг влево*/
+	display: block;
+	height: 68px;
+	width: 68px;
+}
+
+/*настройка переключения и положения для правой стрелки*/
+#switch1:checked ~ #controls label:nth-child(2), 
+#switch2:checked ~ #controls label:nth-child(3),
+#switch3:checked ~ #controls label:nth-child(4),
+#switch4:checked ~ #controls label:nth-child(5),
+#switch5:checked ~ #controls label:nth-child(1){
+	background: url('next.png') no-repeat; /*заливка фона картинкой без повторений*/
+	float: right;
+	margin: 0 -84px 0 0; /*сдвиг вправо*/
+	display: block;
+	height: 68px;
+	width: 68px;
+}
+
+label, a{ /*при наведении на стрелки или переключатели - курсор изменится*/
+	cursor: pointer;
+}
+
+.all input{ /*скрывает стандартные инпуты (чекбоксы) на странице*/
+	display: none;
+}
+
+/*позиция изображения при активации переключателя*/
+#switch1:checked ~ #slides .image{
+	margin-left: 0;
+}
+
+#switch2:checked ~ #slides .image{
+	margin-left: -100%;
+}
+
+#switch3:checked ~ #slides .image{
+	margin-left: -200%;
+}
+
+#switch4:checked ~ #slides .image{
+	margin-left: -300%;
+}
+
+#switch5:checked ~ #slides .image{
+	margin-left: -400%;
+}
+
+#controls{ /*положение блока всех управляющих элементов*/
+	margin: -25% 0 0 0;
+	width: 100%;
+	height: 50px;
+}
+
+#active label{ /*стиль отдельного переключателя*/
+	border-radius: 5px; /*скругление углов*/
+	display: inline-block; /*расположение в строку*/
+	width: 35px;
+	height: 15px;
+	background: #777;
+}
+
+#active{ /*расположение блока с переключателями*/
+	margin: 23% 0 0;
+	text-align: center;
+}
+
+#active label:hover{ /*поведение чекбокса при наведении*/
+	background: #00d045;
+	border-color: #777 !important; /*выполнение в любом случае*/
+}
+
+/*цвет активного лейбла при активации чекбокса*/
+#switch1:checked ~ #active label:nth-child(1),
+#switch2:checked ~ #active label:nth-child(2),
+#switch3:checked ~ #active label:nth-child(3),
+#switch4:checked ~ #active label:nth-child(4),
+#switch5:checked ~ #active label:nth-child(5){
+	background: #00d045;
+	border-color: #00d045 !important;
+}
+
+#slides .image{ /*анимация пролистывания изображений*/
+	transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+#controls label:hover{ /*прозрачность стрелок при наведении*/
+	opacity: 0.6;
+}
+
+#controls label{ /*прозрачность стрелок при отводе курсора*/
+	transition: opacity 0.2s ease-out;
+}
