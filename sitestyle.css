@@ -1,0 +1,529 @@
+
+body {
+   background-color: #111111;
+   font-family: Times New Roman MS, Times New Roman;
+   height: 100px}
+
+header {
+    width: 100%;
+    background: rgba(0,0,0,0.9);
+    height: 40px;
+    position: fixed;
+    }
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.progress-container {
+  width: 100%;
+
+  height: 8px;
+  background: #000;
+  
+}
+
+.progress-bar {
+  height: 8px;
+  position: fixed;
+  background: #000000;
+  width: 0%;
+}
+
+#slider {
+   text-align: center;
+   top: 10px;
+   padding-left: 0%;
+   margin: 0 auto;}
+
+#slides article{
+   width: 20%;
+   float: left;}
+
+#slides .image{
+   width: 500%;
+   line-height: 0;}
+
+#overflow{
+   width: 100%;
+   overflow: hidden;}
+
+article img{
+   width: 100%;}
+
+#desktop:checked ~ #slider{
+   max-width: 800px;}
+
+#switch1:checked ~ #controls label:nth-child(4), 
+#switch2:checked ~ #controls label:nth-child(1),
+#switch3:checked ~ #controls label:nth-child(2),
+#switch4:checked ~ #controls label:nth-child(3){
+   background: url('prev.png') no-repeat;
+   float: left;
+   margin: -40px 0 0 -14px;
+   display: block;
+   height: 60px;
+   width: 60px;}
+
+#switch1:checked ~ #controls label:nth-child(2), 
+#switch2:checked ~ #controls label:nth-child(3),
+#switch3:checked ~ #controls label:nth-child(4),
+#switch4:checked ~ #controls label:nth-child(1){
+   background: url('next.png') no-repeat;
+   float: right;
+   margin: -40px -28px 0 0;
+   display: block;
+   height: 60px;
+   width: 60px;}
+
+label, a{
+   cursor: pointer;}
+
+.all input{
+   display: none;}
+
+#switch1:checked ~ #slides .image{
+   margin-left: 0;}
+
+#switch2:checked ~ #slides .image{
+   margin-left: -100%;}
+
+#switch3:checked ~ #slides .image{
+   margin-left: -200%;}
+
+#switch4:checked ~ #slides .image{
+   margin-left: -300%;}
+
+
+#controls{
+   margin: -25% 0 0 0;
+   width: 100%;
+   height: 50px;}
+
+#active label{
+
+   display: inline-block;
+   width: 15px;
+   height: 15px;
+   background: #bbb;}
+
+#active{
+   margin: 14% 0 0;
+   text-align: center;}
+
+#active label:hover{
+   background: #76c8ff;
+   border-color: #777 !important;}
+
+#switch1:checked ~ #active label:nth-child(1),
+#switch2:checked ~ #active label:nth-child(2),
+#switch3:checked ~ #active label:nth-child(3),
+#switch4:checked ~ #active label:nth-child(4),
+#switch5:checked ~ #active label:nth-child(5){
+   background: #18a3dd;
+   border-color: #18a3dd !important;}
+
+#slides .image{
+   transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);}
+
+#controls label:hover{
+   opacity: 0.6;}
+
+#controls label{
+   transition: opacity 0.2s ease-out;}
+
+
+header #hat span {
+    font-family: Times New Roman MS, Times New Roman;
+    background: #000000;
+    background: transparent;
+    font-size: 3.1em;
+    text-align: center;
+    color: #FFFFF1;
+    line-height: 50%;
+    margin-left: 40%;
+}
+
+.FAQ {margin-left: 5%;
+      padding: 20px;}
+
+details{
+    display:block;
+    background: #0A0A0A;
+    color: #FFFFF1;
+    width: 80%;
+    margin-bottom: 0.5rem;
+    padding-left: 2%;
+    margin-left: 2%;}
+
+summary {
+    display:block;
+    color: #FFFFF1;
+    font-size:1.4em;
+    cursor: pointer;
+    border-bottom: 2px solid #444444;}
+
+summary:before {  
+    color: #FFFFF1;
+    color: transparent; 
+    transition: transform 2.5s;}
+
+details[open] > summary:before {
+  transform: rotateZ(90deg);
+}
+summary ~ * {
+   padding: 0 2em 20px 2em;
+}
+details[open] summary ~ *{ 
+  animation: sweep .5s ease-in-out;
+}
+@keyframes sweep {
+  0%    {opacity: 0;}
+  100%  {opacity: 1;}
+}
+summary:focus {
+  outline:0;
+  box-shadow: inset 0 0 1px rgba(0,0,0,0.3), inset 0 0 2px rgba(0,0,0,0.3);
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+  }
+
+::-webkit-scrollbar-track {
+    background: #0A0A0A;
+  }
+
+::-webkit-scrollbar-thumb {
+    background: #000000;
+  }
+
+
+.navigation {
+    font-family: Times New Roman MS, Times New Roman;
+    font-size: 1.1em;
+    color: #FFFFF1;
+    line-height: 5%;
+    padding-left: 3%;
+    margin-left: 3%;}
+
+.navigation2 {
+    font-family: Times New Roman MS, Times New Roman;
+    font-size: 1.1em;
+    color: #FFFFF1;
+    line-height: 5%;
+    position: center;
+    padding-left: 3%;
+    margin-left: 40%;}
+
+
+
+#navigation > a {color: #FFFFFF}
+#navigation > a:hover {color: #AAAAAA}
+
+#Menu {
+    padding-left: 28px;
+    color: #FFFFF1;
+    position: fixed;
+    height: 100%;
+    width: 20%;
+    border-right: 20px solid #000000;
+    background: rgba(0,0,0,1.0);
+    left: -20%;
+    transition: all 0.8s ease;}
+
+#Menu:hover {
+    position: fixed;
+    height: 100%;
+    width: 20%;
+    border-right: 16px solid #000000;
+    background: rgba(10,10,10,1.0);
+    left: 0%;
+    transition: all 0.8s ease;}
+
+
+#MenuInfo a {
+    color: #FFFFF1;
+    font-size 2 em;
+    padding-left: 8px;
+    color: #AAAAAA
+    transition: all 0.5s ease;}
+
+#MenuInfo a:hover {
+    font-size 2 em;
+    padding-left: 16px;
+    color: #FFFFFF
+    transition: all 0.5s ease;}
+
+#Wblock {
+    width: 100%;
+    height: 500px;
+    background-image: url(Island-Block.jpg);
+    background-blend-mode: multiply;
+    background-color: #404069;
+    background-size: cover;
+    text-align: center;}
+
+#InfoBlock2 {
+    width: 100%;
+    font-size: 1.2em;
+    height: 20px;
+    background-blend-mode: multiply;
+    background-color: #111111;
+    background-size: cover;
+    text-align: center;}
+
+#DownBlock {
+    width: 100%;
+    font-size: 1em;
+    height: 120px;
+    background-color: #000000;
+    text-align: center;}
+
+.ssilki{
+    float: center;
+    margin-left: 1%;
+    margin-right: 1%;}
+
+#h10 {padding-top: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #EEEEEE;
+    float: center}
+
+
+#h11 {padding-top: 0%;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #EEEEEE;
+    float: center}
+
+#h12 {padding-top: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    color: #EEEEEE;
+    float: center}
+
+
+#h13 {padding-top: 0%;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #EEEEEE;
+    float: center}
+
+.h14{padding-top: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    color: #EEEEEE;
+    float: center}
+
+
+.h15{padding-top: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    color: #EEEEEE;
+    text-align: center;}
+
+
+#h16 {padding-top: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    color: #EEEEEE;
+    float: center}
+
+#h17 {padding-top: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    color: #EEEEEE;
+    float: center}
+
+mark {font-size: 1.3em;
+    background: rgba(0,0,0,0.85);
+    color: #FFFFF1;}
+
+li{font-size: 1.2em;
+    padding: 7px;
+    padding-right: 3%;
+    margin-right: 3%;}
+
+#ImageText {
+    margin-left: 1%;
+    margin-right: 1%;
+    color: #EEEEEE;
+    float: center;
+    border: 2px solid #000000;
+    background: #555555;}
+
+
+#InfoBlock {
+    width: 100%;
+    height: 590px;
+    background-color: #111111;
+    background-color: rgba(10,10,10,0.1);
+    background-size: cover;
+    color: #DDDDDD ;
+    font-size: 1.3em;
+    text-align: center;}
+
+#MediaBlock {
+    float: left;
+    width: 100%;
+    height: 380px;
+    background-image: url(Безымянный2.jpg);
+    background-blend-mode: multiply;
+    background-color: #555555;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0px 0;
+    text-align: center;
+    }
+
+header #vertLine0 span {
+    margin-left: 0.5%;
+    width: 60px;
+    background: #000000;
+    height: 100%;
+    position: fixed;
+    }
+
+header #vertLine1 span {
+    margin-left: 0.5%;
+    width: 60px;
+    background: #000000;
+    height: 10%;
+    background-image: url(Безымянный3.png);
+    background-size: cover;
+    position: fixed;
+    }
+
+p { font-size: 1.3em;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-up: 40%;
+}
+
+.Time { font-size: 1em;
+    margin-left: 48%;
+    margin-right: 40%;
+    position: center;
+    color: #FFFFFF;}
+
+.News {margin-left: 20%;
+      position: center;
+      width: 60%;}
+
+h1 {padding-top: 0%;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #EEEEEE;
+    font-size: 2.8em;
+    text-align: center;}
+
+@media (min-width: 200px and max-width: 800px) { 
+    p { 
+        font-size: 3.8em;}
+    .navigation {
+        opacity: 0;} 
+}
+
+@media (min-width: 801px and max-width: 1200px) {
+    p { 
+        font-size: 2.8em;}
+
+    #h10 {padding-top: 12%;
+        margin-left: 1%;
+        margin-right: 10%;
+        color: #EEEEEE;
+        font-size: 2.8em;
+        text-align: center;}
+
+
+    #h11 {padding-top: 0%;
+        margin-left: 10%;
+        margin-right: 10%;
+        color: #EEEEEE;
+        font-size: 2.8em;
+        text-align: center;}
+
+    #h12 {padding-top: 1%;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+        color: #EEEEEE;
+        float: center}
+
+
+}
+
+@media (min-width: 1201px and max-width: 1800px) {
+
+    #h10 {padding-top: 12%;
+        margin-left: 1%;
+        margin-right: 10%;
+        color: #EEEEEE;
+        font-size: 2.8em;
+        text-align: center;}
+
+
+    #h11 {padding-top: 0%;
+        margin-left: 10%;
+        margin-right: 10%;
+        color: #EEEEEE;
+        font-size: 2.8em;
+        text-align: center;}
+
+}
+
+@media (min-width: 1801px) {
+    header {
+        width: 100%;
+        background: rgba(0,0,0,0.9);
+        height: 80px;
+        position: fixed;
+        }
+
+    .navigation {
+        font-family: Times New Roman MS, Times New Roman;
+        font-size: 1.5em;
+        color: #FFFFF1;
+
+        line-height: 1%;
+        float: center;
+        margin-left: 2%;}
+
+    .navigation2 {
+        font-family: Times New Roman MS, Times New Roman;
+        font-size: 1.5em;
+        color: #FFFFF1;
+        line-height: 5%;
+        position: center;
+        padding-left: 32%;
+        margin-left: 5%;}
+
+    #h10 {padding-top: 8%;
+        margin-left: 10%;
+        margin-right: 10%;
+        color: #EEEEEE;
+        font-size: 3.8em;
+        text-align: center;}
+
+
+    #h11 {padding-top: 0%;
+        margin-left: 10%;
+        margin-right: 10%;
+        color: #EEEEEE;
+        font-size: 3.5em;
+        text-align: center;}
+
+    header #hat span {
+        font-size: 5.1em;}
+}
